@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hu Ding</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- GLOBAL STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Times New Roman:300,400,500,600,700" rel="stylesheet"
+        type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .divcss5-a {
+            line-height: 30px
+        }
+
+        /* css 注释说明：设置行距行高30px */
+    </style>
+</head>
+<!-- END HEAD -->
+
+<!-- BODY -->
+
+<body id="body" data-spy="scroll" data-target=".header">
+
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-middle">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="index.html">Home</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="research.html">Research</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="group.html">Group</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="publications.html">Publications</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="teaching.html">Teaching</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="talks.html">Talks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+
+
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- About -->
+
+    <div id="about">
+        <div class="container content-lg">
+            <div class="row">
+                <h2>&nbsp</h2>
+                <div class="section-seperator">
+                    <div class="margin-b-30">
+                        <div class="margin-b-30">
+                            <h2>Research</h2>
+                            <div class="section-seperator margin-b-30"></div>
+                            <p style="color:#000000">In general, I am interested in designing efficient and provable
+                                algorithms for solving real world problems. My primary research area is computational
+                                geometry, in particular on geometric optimization algorithms in high dimensions. We can
+                                often see trends or clusters in data by graphing or plotting-- giving geometric form to
+                                data. As data increases in volume and complexity, giving it geometric form and then
+                                developing computational geometry algorithms is still a fruitful way to approach data
+                                analysis. For example, activity data from a smartphone or fitness tracker can be viewed
+                                as a point in thousands of dimensions whose coordinates include all positions, heart
+                                rates, etc. from an entire sequence of measurements.  For better privacy, we can share
+                                summaries (rough position, duration, etc.) as points in tens of dimensions.  Points from
+                                many people can be clustered to identify similar patterns, and patterns matched (with
+                                unreliable data identified and discarded) to recognize actions that a digital assistant
+                                could take to improve quality of life or health outcomes. Below, we briefly show some
+                                examples and the results obtained from our research. </p>
+                            <div class="section-seperator margin-b-60"></div>
+                            <h3>Example 1: Clustering</h3>
+                            <div class="margin-b-30"></div>
+                            <p style="color:#000000">Clustering is one of the most fundamental problems in computer
+                                science, and finds numerous applications in many different areas, such as data
+                                management, machine learning, bioinformatics, networking. The common goal of many
+                                clustering problems is to partition a set of given data items into a number of clusters
+                                so as to minimize the total cost measured by a certain objective function. For example,
+                                the popular k-means clustering seeks k mean points to induce a partition of the given
+                                data items so that the average squared distance from each data item to its closest mean
+                                point is minimized. However, in many real-world applications, data items are often
+                                constrained or correlated, which require a great deal of effort to handle such
+                                additional constraints. In recent years, considerable attention has been paid to various
+                                types of constrained clustering problems, such as l-diversity clustering, r-gather
+                                clustering, capacitated clustering, fair clustering. One key property exhibited in many
+                                unconstrained clustering problems is the so called locality property, which indicates
+                                that each cluster is located entirely inside the Voronoi cell of its center. Existing
+                                algorithms for these clustering problems often rely on such a property. However, due to
+                                the additional constraints, the locality property may no longer exist. We present a
+                                unified framework called Peeling-and-Enclosing (PnE), based on two standalone geometric
+                                techniques called Simplex Lemma and Weaker Simplex Lemma, to solve a class of
+                                constrained clustering problems without the locality property in Euclidean space, where
+                                the dimensionality of the space could be rather high.</p>
+                            <div class="margin-b-30" align="center">
+                                <img src="img/ex1.png">
+                                <p style="color:#000000">The locality property is destroyed if data items are
+                                    constrained.</p>
+                            </div>
+                            <h3>Related publications:</h3>
+                            <ol>
+                                <div class="divcss5-a">
+                                    <li><b>H. Ding</b> and J. Xu, "<a href="https://doi.org/10.1137/1.9781611973730.97"
+                                            style="color:#5CACEE"><u>A Unified Framework for Clustering Constrained Data
+                                                without Locality Property</u></a>", Proc. 26th ACM-SIAM Symposium on
+                                        Discrete Algorithms (<b>SODA'15</b>), pp.1471-1490, San Diego, CA, USA, January
+                                        4-6, 2015.</li>
+                                    <li><b>H. Ding</b> and J. Xu, "<a
+                                            href="https://link.springer.com/chapter/10.1007/978-3-642-22006-7_65"
+                                            style="color:#5CACEE"><u>Solving the Chromatic Cone Clustering Problem via
+                                                Minimum Spanning Sphere</u></a>" Proc. 38th International Colloquium on
+                                        Automata, Languages and Programming (<b>ICALP'11</b>), pp.773-784, Z\"{u}rich,
+                                        Switzerland, July 4-8, 2011.</li>
+                                    <li><b>H. Ding</b>, L. Hu, L. Huang, and J. Li, "<a
+                                            href="https://link.springer.com/chapter/10.1007/978-3-319-62127-2_28"
+                                            style="color:#5CACEE"><u>Capacitated Center Problems with Two-Sided Bounds
+                                                and Outliers</u></a>" The 15th International Algorithms and Data
+                                        Structures Symposium (<b>WADS'17</b>), pp.325-336, St. John's, Canada, July
+                                        31-August 2, 2017.</li>
+                                    <li><b>H. Ding</b>, Y. Liu, L. Huang, and J. Li, " <a
+                                            href="http://proceedings.mlr.press/v48/ding16.html"
+                                            style="color:#5CACEE"><u>K-Means Clustering with Distributed
+                                                Dimensions</u></a>" The 33rd International Conference on Machine
+                                        Learning (<b>ICML'16</b>), pp.1339-1348, New York City, NY, USA, June 19-24,
+                                        2016.</li>
+                                </div>
+                            </ol>
+                            <div class="margin-b-30"></div>
+                            <div class="section-seperator margin-b-60"></div>
+
+                            <h3>Example 2: Geometric Matching and Alignment</h3>
+                            <div class="margin-b-30"></div>
+                            <p style="color:#000000">Given two patterns in Euclidean space, where each pattern is
+                                represented by a (weighted) point set, the goal of geometric matching is to compute the
+                                mapping between them with the smallest matching cost (e.g., Hausdorff distance or Earth
+                                Mover’s Distance). If the point sets are not fixed the space, the problem is called
+                                "geometric alignment" which aims to find appropriate transformations (e.g., rigid or
+                                affine transformation) and minimize the matching cost simultaneously. Geometric matching
+                                and alignment are fundamental optimization problems, and find many applications in real
+                                world, such as face recognition, fingerprint alignment. Moreover, as the recent
+                                developments of representation learning theory, a number of machine learning problems
+                                can be embedded into Euclidean spaces and reduced to geometric alignment, such as
+                                network alignment and unsupervised bilingual learning. We provide a Fully Polynomial
+                                Time Approximation Scheme (FPTAS) for solving the geometric alignment problem under
+                                rigid transformation.</p>
+                            <p style="color:#000000">We also study a new geometric optimization problem called the
+                                "geometric prototype'' in Euclidean space. Given a set of point sets, the geometric
+                                prototype can be viewed as the "average pattern'' minimizing the total matching cost to
+                                them. As a general model, the problem finds many applications in real-world, such as
+                                Wasserstein barycenter and ensemble clustering. To our best knowledge, the general
+                                geometric prototype problem has yet to be seriously considered by the theory community.
+                                To bridge the gap between theory and practice, we show that a small core-set can be
+                                obtained to substantially reduce the data size. Consequently, any existing heuristic or
+                                algorithm can run on the core-set to achieve a great improvement on the efficiency.</p>
+                            <div class="margin-b-30"></div>
+
+                            <h3>Related publications:</h3>
+                            <ol>
+                                <div class="divcss5-a">
+                                    <li><b>H. Ding</b> and J. Xu, "<a href="https://doi.org/10.1007/s00453-016-0173-4"
+                                            style="color:#5CACEE"><u>FPTAS for Minimizing the Earth Mover's Distance
+                                                Under Rigid Transformations and Related Problems</u></a>"
+                                        <b>Algorithmica</b>, Volume 78, Issue 3, July 2017, pp.741-770.</li>
+                                    <li><b>H. Ding</b> and M. Ye, "<a
+                                            href="https://doi.org/10.1609/aaai.v33i01.33011460"
+                                            style="color:#5CACEE"><u>On Geometric Alignment in Low Doubling
+                                                Dimension</u></a>'' The 33rd AAAI Conference on Artificial Intelligence
+                                        (<b>AAAI'19</b>), pp.1460-1467, Honolulu, Hawaii, USA, Jan 27-Feb 1, 2019.</li>
+                                    <li><b>H. Ding</b> and M. Liu, "<a href="https://doi.org/10.4230/LIPIcs.ESA.2018.23"
+                                            style="color:#5CACEE"><u>On Geometric Prototype and Applications</u></a>''
+                                        The 26th Annual European Symposium on Algorithms (<b>ESA'18</b>), pp.23:1-23:15,
+                                        Helsinki, Finland, Aug 20-22, 2018.</li>
+                                    <li>Y. Liu, <b>H. Ding</b>, D. Chen, and J. Xu, "<a
+                                            href="http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14269"
+                                            style="color:#5CACEE"><u>Novel Geometric Approach for Global Alignment of
+                                                PPI Networks</u></a>" The 31st AAAI Conference on Artificial
+                                        Intelligence (<b>AAAI'17</b>), pp.31-37, San Francisco, CA, USA, February 4-9,
+                                        2017.</li>
+                                    <li><b>H. Ding</b>, L. Su, and J. Xu, "<a
+                                            href="https://doi.org/10.1145/2942358.2942391"
+                                            style="color:#5CACEE"><u>Towards Distributed Ensemble Clustering for
+                                                Networked Sensing Systems: A Novel Geometric Approach</u></a>" The 17th
+                                        ACM International Symposium on Mobile Ad Hoc Networking and Computing
+                                        (<b>MobiHoc'16</b>), pp.1-10, Paderborn, Germany, July 4-8, 2016.</li>
+                                    <li><b>H. Ding </b>and J. Xu, "<a
+                                            href="http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8347"
+                                            style="color:#5CACEE"><u>Finding Median Point-Set Using Earth Mover's
+                                                Distance</u></a>" Proc. 28th AAAI Conference on Artificial Intelligence
+                                        (<b>AAAI'14</b>), pp.1781-1787, City, Canada, July 27 -31, 2014.</li>
+                                </div>
+                            </ol>
+                            <div class="margin-b-30"></div>
+                            <div class="section-seperator margin-b-60"></div>
+
+                            <h3>Example 3: Outlier Removal and Robust Optimization</h3>
+                            <div class="margin-b-30"></div>
+                            <p style="color:#000000">In this big data era, we are confronted with an extremely large
+                                amount of data and it is important to develop efficient algorithmic techniques to handle
+                                the arising realistic issues. Due to its recent rapid development, machine learning
+                                becomes a powerful tool for many emerging applications; meanwhile, the quality of
+                                training dataset often plays a key role and seriously affects the final learning result.
+                                For example, we can collect tremendous data (e.g., texts or images) through the
+                                internet, however, the obtained dataset often contains a significant amount of outliers.
+                                Since manually removing outliers will be very costly, it is very necessary to develop
+                                some efficient algorithms for recognizing outliers automatically in many scenarios.
+                                Outlier recognition is a typical unsupervised learning problem and the given data are
+                                unlabeled; thus we can only model it as an optimization problem based on some reasonable
+                                assumption in practice. For instance, it is very natural to assume that the inliers
+                                (i.e., normal data) locate in some dense region while the outliers are scattered in the
+                                feature space. We study several fundamental optimization problems with outliers, such as
+                                clustering, classification, and linear regression, and design provable algorithms for
+                                them.</p>
+                            <div class="margin-b-30"></div>
+
+                            <h3>Related publications:</h3>
+                            <ol>
+                                <div class="divcss5-a">
+                                    <li><b>H. Ding</b>: <a href="http://arxiv.org/abs/1904.03796"
+                                            style="color:#5CACEE"><u>Minimum Enclosing Ball Revisited: Stability and
+                                                Sub-linear Time Algorithms</u></a>. CoRR abs/1904.03796 (2019)</li>
+                                    <li><b>H. Ding</b>, Haikuo Yu <a href="http://arxiv.org/abs/1905.10143"
+                                            style="color:#5CACEE"><u> A Practical Framework for Solving Center-Based
+                                                Clustering with Outliers</u></a>. CoRR abs/1905.10143 (2019)</li>
+                                    <li><b>H. Ding</b>, H. Yu, and Z. Wang, "<a
+                                            href="https://doi.org/10.4230/LIPIcs.ESA.2019.40"
+                                            style="color:#5CACEE"><u>Greedy Strategy Works for k-Center Clustering with
+                                                Outliers and Coreset Construction</u></a>'' The 27th Annual European
+                                        Symposium on Algorithms (<b>ESA'19</b>), pp.40:1-40:16, Munich/Garching,
+                                        Germany, September 9-11, 2019</li>
+                                    <li><b>H. Ding</b> and J. Xu, "<a
+                                            href="http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9477"
+                                            style="color:#5CACEE"><u>Random Gradient Descent Tree: A Combinatorial
+                                                Approach for SVM with Outliers</u></a>" Proc. 29th AAAI Conference on
+                                        Artificial Intelligence (<b>AAAI'15</b>), pp.2561-2567, Austin, Texas, USA,
+                                        January 25-30, 2015.</li>
+                                    <li><b>H. Ding</b> and J. Xu, "<a
+                                            href="https://www.researchgate.net/publication/266656456_Sub-linear_Time_Hybrid_Approximations_for_Least_Trimmed_Squares_Estimator_and_Related_Problems"
+                                            style="color:#5CACEE"><u>Sub-linear Time Hybrid Approximations for Least
+                                                Trimmed Squares Estimator and Related Problems</u></a>" Proc. 30th ACM
+                                        Symposium on Computational Geometry (<b>SoCG'14</b>), pp.110-119, Kyoto, Japan,
+                                        June 08 - 11, 2014.</li>
+                                </div>
+                            </ol>
+                            <div class="margin-b-30"></div>
+                            <div class="section-seperator margin-b-60"></div>
+
+                            <h3>Example 4: Application in Crowdsourcing</h3>
+                            <div class="margin-b-30"></div>
+                            <p style="color:#000000">Truth Discovery is an important problem arising in data analytics
+                                related fields such as data mining, database, and big data. It concerns about finding
+                                the most trustworthy information from a dataset acquired from a number of unreliable
+                                sources. Due to its importance, the problem has been extensively studied in recent years
+                                and a number techniques have already been proposed. However, all of them are of
+                                heuristic nature and do not have any quality guarantee. We formulate the problem as a
+                                high dimensional geometric optimization problem, called Entropy based Geometric
+                                Variance. Relying on a number of novel geometric techniques (such as Log-Partition and
+                                Modified Simplex Lemma), we further discover new insights to this problem. We show, for
+                                the first time, that the truth discovery problem can be solved with guaranteed quality
+                                of solution. Particularly, we show that it is possible to achieve a
+                                (1+eps)-approximation within nearly linear time under some reasonable assumptions. We
+                                expect that our algorithm will be useful for other data related applications.</p>
+                            <div class="margin-b-30"></div>
+
+                            <h3>Related publications:</h3>
+                            <ol>
+                                <div class="divcss5-a">
+                                    <li>Z. Huang, <b>H. Ding</b>, and J. Xu, "<a
+                                            href="https://doi.org/10.1007/s00453-019-00562-z" style="color:#5CACEE"><u>A
+                                                Faster Algorithm for Truth Discovery via Range Cover</u></a>"
+                                        <b>Algorithmica</b> Volume 81, Issue 10, October, 2019, pp. 4118-4133.</li>
+                                    <li><b>H. Ding</b>, J. Gao, and J. Xu, " <a
+                                            href="https://doi.org/10.4230/LIPIcs.SoCG.2016.34"
+                                            style="color:#5CACEE"><u>Finding Global Optimum for Truth Discovery: Entropy
+                                                Based Geometric Variance</u></a>" The 32nd International Symposium on
+                                        Computational Geometry (<b>SoCG'16</b>), 34:1-34:16, Boston, MA, USA, June
+                                        14-18, 2016.</li>
+                                    <li>C. Meng, W. Jiang, Y. Li, J. Gao, L. Su, <b>H. Ding</b>, and Y. Cheng, "
+                                        <a href="https://doi.org/10.1145/2809695.2809715" style="color:#5CACEE"><u>Truth
+                                                Discovery on Crowd Sensing of Correlated Entities</u></a>", The 13th ACM
+                                        Conference on Embedded Networked Sensor Systems (<b>SenSys'15</b>), pp.169-182,
+                                        Seoul, South Korea, November 1-4, 2015.</li>
+                                </div>
+                            </ol>
+                            <div class="margin-b-30"></div>
+                            <div class="section-seperator margin-b-60"></div>
+
+                            <h3>Example 5: Application in Biomedical Imaging</h3>
+                            <div class="margin-b-30"></div>
+                            <p style="color:#000000">Computing accurate and robust organizational patterns of chromosome
+                                territories inside the cell nucleus is critical for understanding several fundamental
+                                genomic processes, such as co-regulation of gene activation, gene silencing, X
+                                chromosome inactivation, and abnormal chromosome rearrangement in cancer cells. The
+                                usage of advanced fluorescence labeling and image processing techniques has enabled
+                                researchers to investigate interactions of chromosome territories at large spatial
+                                resolution. The resulting high volume of generated data demands for high-throughput and
+                                automated image analysis methods. We introduce a novel algorithmic tool for
+                                investigating association patterns of chromosome territories in a population of cells.
+                                Our method takes as input a set of graphs, one for each cell, containing information
+                                about spatial interaction of chromosome territories, and yields a single graph that
+                                contains essential information for the whole population and stands as its structural
+                                representative. We formulate this combinatorial problem as a semi-definite programming
+                                and present novel geometric techniques to efficiently solve it.</p>
+                            <div class="margin-b-30"></div>
+
+                            <h3>Related publications:</h3>
+                            <ol>
+                                <div class="divcss5-a">
+                                    <li><b>H. Ding</b>, B. Stojkovic, R. Berezney, and J. Xu, "<a
+                                            href="https://doi.org/10.1109/CVPR.2013.171"
+                                            style="color:#5CACEE"><u>Gauging Association Patterns of Chromosome
+                                                Territories via Chromatic Median</u></a>" Proc. IEEE Conference on
+                                        Computer Vision and Pattern Recognition (<b>CVPR'13</b>), pp.1296-1303,
+                                        Portland, OR, USA, June 23-28, 2013. Oral presentation (acceptance rate: 3.2%).
+                                    </li>
+                                    <li><b>H. Ding</b>, R. Berezney, and J. Xu, "<a
+                                            href="http://papers.nips.cc/paper/5095-k-prototype-learning-for-3d-rigid-structures"
+                                            style="color:#5CACEE"><u>k-Prototype Learning for 3D Rigid
+                                                Structures</u></a>" Advances in Neural Information Processing Systems
+                                        (<b>NIPS'13</b>), pp.2589-2597, Lake Tahoe, Nevada, USA, December 5-8, 2013.
+                                    </li>
+                                    <li>N. Sehgal, B. Seifert, <b>H. Ding</b>, Z. Chen, B. Stojkovic, S. Bhattacharya,
+                                        J. Xu, and R. Berezney, "<a
+                                            href="https://link.springer.com/article/10.1007/s00412-015-0546-5"
+                                            style="color:#5CACEE"><u>Reorganization of the interchromosomal network
+                                                during keratinocyte differentiation</u></a>"<b>Chromosoma</b>, Volume
+                                        125, Number 3, June 2016, pp.389-403.</li>
+                                    <li>N. Sehgal, A. Fritz, J. Vecerova, <b>H. Ding</b>, Z. Chen, B. Stojkovic, S.
+                                        Bhattacharya, J. Xu, and R. Berezney, "<a
+                                            href="https://www.ncbi.nlm.nih.gov/pubmed/26604142"
+                                            style="color:#5CACEE"><u>Large Scale Probabilistic 3-D Organization of Human
+                                                Chromosome Territories</u></a>" <b>Human Molecular Genetics</b>, Volume
+                                        25, Number 3, February 2016, pp.419-436. (<b>Awarded Cover Page, and recommended
+                                            by F1000Prime as an Article of Special Significance to its Field</b>)</li>
+                                    <li>A. Pliss, A. J. Fritz, B. Stojkovic, <b>H. Ding</b>, L. Mukherjee, S.
+                                        Bhattacharya, J. Xu, and R. Berezney, "<a
+                                            href="https://www.ncbi.nlm.nih.gov/pubmed/25077974"
+                                            style="color:#5CACEE"><u>Non-random Patterns in the Distribution of
+                                                NOR-bearing Chromosome Territories in Human Fibroblasts: A Network Model
+                                                of Interactions</u></a>'' <b>Journal of Cellular Physiology</b>, Volume
+                                        230, Issue 2, February 2015, pp.427-439. (<b>Awarded Cover Page</b>)</li>
+                                    <li>A. J. Fritz, B. Stojkovic, <b>H. Ding</b>, J. Xu, S. Bhattacharya, and R.
+                                        Berezney, "<a href="https://www.ncbi.nlm.nih.gov/pubmed/25275626"
+                                            style="color:#5CACEE"><u>Cell Type Specific Alterations in Interchromosomal
+                                                Networks Across the Cell Cycle</u></a>" <b>PLoS Computational
+                                            Biology</b>, Volume 10, Issue 10, October 2014.</li>
+                                    <li>A.J. Fritz, B. Stojkovic, <b>H. Ding</b>, J. Xu, S. Bhattacharya, D. Galle, and
+                                        R. Berezney, "<a href="https://www.ncbi.nlm.nih.gov/pubmed/24833717"
+                                            style="color:#5CACEE"><u>Wide-scale Alterations in Interchromosomal
+                                                Organization in Breast Cancer Cells: Defining a Network of Interacting
+                                                Chromosomes</u></a>" <b>Human Molecular Genetics</b> Volume 23, Number
+                                        19, October 2014, pp.5133-5146.</li>
+                                </div>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// end row -->
+    </div>
+    </div>
+    <!-- End About -->
+
+    <!--========== END PAGE LAYOUT ==========-->
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="content container">
+            <div class="col-xs-6">
+                <p>Copyright &copy; 2019. diag All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- CORE PLUGINS -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+<!-- END BODY -->
+
+</html>
