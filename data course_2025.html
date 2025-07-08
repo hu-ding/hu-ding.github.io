@@ -1,324 +1,283 @@
 
-	<!DOCTYPE html>
-	<html lang="en" class="no-js">
-	<!-- BEGIN HEAD -->
-	
-	<head>
-	<meta charset="utf-8" />
-	<title>Hu Ding</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
 
-	<!-- GLOBAL STYLES -->
-	<link href="http://fonts.googleapis.com/css?family=Times New Roman:300,400,500,600,700" rel="stylesheet"
+<head>
+<meta charset="utf-8" />
+<title>Hu Ding</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
 
-	type="text/css">
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+<!-- GLOBAL STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Times New Roman:300,400,500,600,700" rel="stylesheet"
 
-	
-	
-	</head>
-	<!-- END HEAD -->
-	
-	<!-- BODY -->
-	
-	<body id="body" data-spy="scroll" data-target=".header">
-	
-	<!--========== HEADER ==========-->
-	<header class="header navbar-fixed-top">
-	<!-- Navbar -->
-	<nav class="navbar" role="navigation">
-	<div class="container">
-	<!-- Brand and toggle get grouped for better mobile display -->
-	<div class="menu-container js_nav-item">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-	<span class="sr-only">Toggle navigation</span>
-	<span class="toggle-icon"></span>
-	</button>
-	</div>
-	<!-- Collect the nav links, forms, and other content for toggling -->
-	<div class="collapse navbar-collapse nav-collapse">
-	<div class="menu-container">
-	<ul class="nav navbar-nav navbar-nav-middle">
-	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-	href="index.html">Home</a></li>
+type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.min.css" rel="stylesheet" type="text/css" />
 
-	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-	href="research.html">Research</a></li>
+<style>
+    body {
+      font-family: sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+      counter-reset: section;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section {
+      counter-increment: section;
+      counter-reset: item;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+    .section h2::before {
+      content: counter(section) "、";
+      font-weight: bold;
+    }
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-left: 4px solid #4CAF50;
+      padding-left: 10px;
+      color: #333;
+    }
+    ol {
+      list-style: none;
+      padding-left: 20px;
+    }
+    ol li {
+      counter-increment: item;
+      margin: 8px 0;
+    }
+    ol li::before {
+      content: counter(section) "." counter(item) " ";
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 
-	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-	href="group.html">Group</a></li>
+</head>
+<!-- END HEAD -->
 
-	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-	href="publications.html">Publications</a></li>
+<!-- BODY -->
 
-	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-	href="teaching.html">Teaching</a></li>
+<body id="body" data-spy="scroll" data-target=".header">
 
-	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-	href="talks.html">Talks</a></li>
+<!--========== HEADER ==========-->
+<header class="header navbar-fixed-top">
+<!-- Navbar -->
+<nav class="navbar" role="navigation">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="menu-container js_nav-item">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="toggle-icon"></span>
+</button>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse nav-collapse">
+<div class="menu-container">
+<ul class="nav navbar-nav navbar-nav-middle">
+<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+href="index.html">Home</a></li>
 
-	</ul>
-	</div>
-	</div>
-	<!-- End Navbar Collapse -->
-	</div>
-	</nav>
-	<!-- Navbar -->
-	</header>
-	<!--========== END HEADER ==========-->
-	
-	<div class="promo-block">
-	<div class="container">
-	
-	<!--// end row -->
-	</div>
-	</div>
-	<!--========== SLIDER ==========-->
-	<!--========== SLIDER ==========-->
-	
-	<!--========== PAGE LAYOUT ==========-->
-	<!-- About -->
-	
-	<div id="about">
-	<div class="container">
-	<div class="section-seperator">
-	<div class="margin-b-30"></div>
-	<div class="infoblock">
-	<div class="blockcontent1">
-	<div align="center">
-	</br>
-	<p style="color:#000000">
-	<font size="5"><b> 大数据算法（2025年春季）</b></font>
-	</p>
-	</div>
-	
-	</br>
-	<p style="color:#000000"><b> 助教：</b>王运韬 wangyuntao@mail.ustc.edu.cn ，王向禄 wz124517@mail.ustc.edu.cn，莫官霖 moguanlin@mail.ustc.edu.cn ，张嘉贤 zjx20200@mail.ustc.edu.cn</p>
+<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+href="research.html">Research</a></li>
 
-	</br>
-	<p style="color:#000000"><b> 课程简介</b></p>
-	</br>
-	<div style="line-height:120px;">
-	<p style="color:#000000"> &nbsp; &nbsp;&nbsp; &nbsp;
-	算法与理论是计算机科学的核心领域之一。随着大数据时代的来临，传统的算法理论已经不能很好地解决人工智能、
-	物联网、工业制造等领域所遇到的实际问题。本门课程主要介绍基于大数据的新型算法技术，如随机采样、数据降维、数据压缩、分布式计算、
-	流数据计算、聚类、分类、随机优化等，以及相关的理论和数学技巧，如概率计算方法、vc维、通信复杂度、机器学习、深度学习理论等。
-	作为一门理论方向课程，帮助学生掌握解决大数据问题所需的理论和算法工具，为相关领域的工程实践打好基础。 </p>
-	</p>
-	</div>
-	</br>
-    <p style="color:#000000">
-  <font size="4">
-    <b>一、数学工具</b>
-  </font>
+<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+href="group.html">Group</a></li>
+
+<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+href="publications.html">Publications</a></li>
+
+<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+href="teaching.html">Teaching</a></li>
+
+<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+href="talks.html">Talks</a></li>
+
+</ul>
+</div>
+</div>
+<!-- End Navbar Collapse -->
+</div>
+</nav>
+<!-- Navbar -->
+</header>
+<!--========== END HEADER ==========-->
+
+<div class="promo-block">
+<div class="container">
+
+<!--// end row -->
+</div>
+</div>
+<!--========== SLIDER ==========-->
+<!--========== SLIDER ==========-->
+
+<!--========== PAGE LAYOUT ==========-->
+<!-- About -->
+
+<div id="about">
+<div class="container">
+<div class="section-seperator">
+<div class="margin-b-30"></div>
+<div class="infoblock">
+<div class="blockcontent1">
+<div align="center">
+</br>
+<p style="color:#000000">
+<font size="5"><b> 大数据算法（2025年春季）</b></font>
 </p>
+</div>
+
+</br>
+<p style="color:#000000"><b> 助教：</b>王运韬 wangyuntao@mail.ustc.edu.cn ，王向禄 wz124517@mail.ustc.edu.cn，莫官霖 moguanlin@mail.ustc.edu.cn ，张嘉贤 zjx20200@mail.ustc.edu.cn</p>
+
+</br>
+<p style="color:#000000"><b> 课程简介</b></p>
+</br>
+<div style="line-height:120px;">
+<p style="color:#000000"> &nbsp; &nbsp;&nbsp; &nbsp;
+算法与理论是计算机科学的核心领域之一。随着大数据时代的来临，传统的算法理论已经不能很好地解决人工智能、
+物联网、工业制造等领域所遇到的实际问题。本门课程主要介绍基于大数据的新型算法技术，如随机采样、数据降维、数据压缩、分布式计算、
+流数据计算、聚类、分类、随机优化等，以及相关的理论和数学技巧，如概率计算方法、vc维、通信复杂度、机器学习、深度学习理论等。
+作为一门理论方向课程，帮助学生掌握解决大数据问题所需的理论和算法工具，为相关领域的工程实践打好基础。 </p>
+</p>
+</div>
+</br>
+
+<div class="section">
+	<h2>一、数学工具</h2>
 	<ol>
-	<li>
-	<font size="4"><b>基础数学和统计工具 </b><a href="data_pdf/2025/base math.pdf"
-
-	style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>集中不等式、Chaining </b><a href="data_pdf/2025/inequality.pdf"
-
-	style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>二、随机算法</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>随机算法——Maxcut </b><a href="data_pdf/2025/maxcut.pdf"
-
-	style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-
-	<li><font size="4"><b>EX.Balls and Bins </b><a href="data_pdf/2025/balls and bins.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-		
-	<li>
-	<font size="4"><b>K-means 聚类 </b><a href="data_pdf/2025/k-means.pdf"
-
-	style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
- 	<li>
-	<font size="4"><b>Karger 算法 </b><a href="data_pdf/2025/Karger.pdf"
-	style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>三、降维</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>主成分分析 </b><a href="data_pdf/2025/pca.pdf"
-
-	style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>JL 变换 </b><a href="data_pdf/2025/JL.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>JL 变换的应用 </b><a href="data_pdf/2025/JL app.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>JL 变换的应用(线性变换) </b><a href="data_pdf/2025/JL for LR.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    	<li>
-	<font size="4"><b>多维尺度分析 </b><a href="data_pdf/2025/Manifold.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>四、近邻查询</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>局部敏感哈希 </b><a href="data_pdf/2025/LSH.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    <li>
-	<font size="4"><b>乘积量化 </b><a href="data_pdf/2025/PQ.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>五、次线性算法</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>1-median 问题</b><a href="data_pdf/2025/1-median.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>平均距离问题 </b><a href="data_pdf/2025/average.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>六、VC 维与核心集</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>VC维简介 </b><a href="data_pdf/2025/VC-dimension.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    <li>
-	<font size="4"><b>VC维与PAC学习 </b><a href="data_pdf/2025/VC_pac.pptx"
-		style="color:#5CACEE"><b>(pptx) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>核心集 </b><a href="data_pdf/2025/coreset.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>核心集：深度学习 </b><a href="data_pdf/2025/coresets-DL.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>七、最优传输</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>Sinkhorn算法简介 </b><a href="data_pdf/2025/OT.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-	<li>
-	<font size="4"><b>最优传输问题：理论与应用 </b><a href="data_pdf/2025/OT slides.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>八、分布式算法</b>
-  </font>
-</p>
-<ol>
-    <li>
-	<font size="4"><b>重心估计 </b><a href="data_pdf/2025/Mean.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    	<li>
-	<font size="4"><b>分布式算法综述 </b><a href="data_pdf/2025/distribution.pptx"
-		style="color:#5CACEE"><b>(pptx) </b></a></font>
-	</li>
-    </ol>
-    <p style="color:#000000">
-  <font size="4">
-    <b>九、最坏情况分析</b>
-  </font>
-</p>
-<ol>
-	<li>
-	<font size="4"><b>k-means问题的最坏情况 </b><a href="data_pdf/2025/WBCA1.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
-    	<li>
-	<font size="4"><b>压缩感知 </b><a href="data_pdf/2025/Compress.pdf"
-		style="color:#5CACEE"><b>(pdf) </b></a></font>
-	</li>
+		<li>基础数学和统计工具 <a href="data_pdf/2025/base math.pdf">(pdf)</a></li>
+		<li>集中不等式、Chaining <a href="data_pdf/2025/inequality.pdf">(pdf)</a></li>
 	</ol>
+</div>
 
-	
+<div class="section">
+	<h2>二、随机算法</h2>
+	<ol>
+		<li>随机算法——Maxcut <a href="data_pdf/2025/maxcut.pdf">(pdf)</a></li>
+		<li>EX.Balls and Bins <a href="data_pdf/2025/balls and bins.pdf">(pdf)</a></li>
+		<li>K-means 聚类 <a href="data_pdf/2025/k-means.pdf">(pdf)</a></li>
+		<li>Karger 算法 <a href="data_pdf/2025/Karger.pdf">(pdf)</a></li>
+	</ol>
+</div>
 
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	
-	<!-- End About -->
-	
-	<!--========== END PAGE LAYOUT ==========-->
-	
-	<!--========== FOOTER ==========-->
-	<footer class="footer">
-	<div class="content container">
-	<div class="col-xs-6">
-	<p>Copyright &copy; 2019. diag All rights reserved.</p>
-	</div>
-	</div>
-	</footer>
-	<!--========== END FOOTER ==========-->
-	
-	<!-- Back To Top -->
-	<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
-	
-	
-	<!-- CORE PLUGINS -->
-	<script src="js/jquery.min.js" type="text/javascript"></script>
+<div class="section">
+	<h2>三、降维</h2>
+	<ol>
+		<li>主成分分析 <a href="data_pdf/2025/pca.pdf">(pdf)</a></li>
+		<li>JL 变换 <a href="data_pdf/2025/JL.pdf">(pdf)</a></li>
+		<li>JL 变换的应用 <a href="data_pdf/2025/JL app.pdf">(pdf)</a></li>
+		<li>JL 变换的应用(线性变换) <a href="data_pdf/2025/JL for LR.pdf">(pdf)</a></li>
+		<li>多维尺度分析 <a href="data_pdf/2025/Manifold.pdf">(pdf)</a></li>
+	</ol>
+</div>
 
-	<script src="js/jquery.back-to-top.js" type="text/javascript"></script>
-	<script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<div class="section">
+	<h2>四、近邻查询</h2>
+	<ol>
+		<li>局部敏感哈希 <a href="data_pdf/2025/LSH.pdf">(pdf)</a></li>
+		<li>乘积量化 <a href="data_pdf/2025/PQ.pdf">(pdf)</a></li>
+	</ol>
+</div>
 
-	
-	</body>
-	<!-- END BODY -->
-	
-	</html>
-	
+<div class="section">
+	<h2>五、次线性算法</h2>
+	<ol>
+		<li>1-median 问题 <a href="data_pdf/2025/1-median.pdf">(pdf)</a></li>
+		<li>平均距离问题 <a href="data_pdf/2025/average.pdf">(pdf)</a></li>
+	</ol>
+</div>
+
+<div class="section">
+	<h2>六、VC 维与核心集</h2>
+	<ol>
+		<li>VC维简介 <a href="data_pdf/2025/VC-dimension.pdf">(pdf)</a></li>
+		<li>VC维与PAC学习 <a href="data_pdf/2025/VC_pac.pptx">(pptx)</a></li>
+		<li>核心集 <a href="data_pdf/2025/coreset.pdf">(pdf)</a></li>
+		<li>核心集：深度学习 <a href="data_pdf/2025/coresets-DL.pdf">(pdf)</a></li>
+	</ol>
+</div>
+
+<div class="section">
+	<h2>七、最优传输</h2>
+	<ol>
+		<li>Sinkhorn算法简介 <a href="data_pdf/2025/OT.pdf">(pdf)</a></li>
+		<li>最优传输问题：理论与应用 <a href="data_pdf/2025/OT slides.pdf">(pdf)</a></li>
+	</ol>
+</div>
+
+<div class="section">
+	<h2>八、分布式算法</h2>
+	<ol>
+		<li>重心估计 <a href="data_pdf/2025/Mean.pdf">(pdf)</a></li>
+		<li>分布式算法综述 <a href="data_pdf/2025/distribution.pptx">(pptx)</a></li>
+	</ol>
+</div>
+
+<div class="section">
+	<h2>九、最坏情况分析</h2>
+	<ol>
+		<li>k-means问题的最坏情况 <a href="data_pdf/2025/WBCA1.pdf">(pdf)</a></li>
+		<li>压缩感知 <a href="data_pdf/2025/Compress.pdf">(pdf)</a></li>
+	</ol>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- End About -->
+
+<!--========== END PAGE LAYOUT ==========-->
+
+<!--========== FOOTER ==========-->
+<footer class="footer">
+<div class="content container">
+<div class="col-xs-6">
+<p>Copyright &copy; 2019. diag All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!--========== END FOOTER ==========-->
+
+<!-- Back To Top -->
+<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+
+<!-- CORE PLUGINS -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<script src="js/jquery.back-to-top.js" type="text/javascript"></script>
+<script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+
+</body>
+<!-- END BODY -->
+
+</html>
+
